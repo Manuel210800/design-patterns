@@ -70,7 +70,7 @@ def prototype_app():
     print("\n")
     print(f"Original restrictions ID: {id(original._Coupon__restrictions)}")
     print(f"Clone restrictions ID:    {id(clone._Coupon__restrictions)}")
-    print("\nModificando clone.restrictions['min_purchase'] = 999")
+    print("\nUpdating clone.restrictions['min_purchase'] = 999")
     clone._Coupon__restrictions["min_purchase"] = 999
     print("Original restrictions:", original._Coupon__restrictions)
     print("Clone restrictions:", clone._Coupon__restrictions)
